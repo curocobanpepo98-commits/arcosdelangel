@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <title>Arcos del Ángel - Menú</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Montserrat:wght@300;400&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    
+    <style>
+        :root {
+            --dorado-angel: #c5a059;
+            --negro-fondo: #0f0f0f;
+            --blanco-texto: #ffffff;
+        }
+
+        body {
+            background-color: var(--negro-fondo);
+            color: var(--blanco-texto);
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        /* barra */
+        .navbar {
+            background-color: #000000 !important;
+            border-bottom: 2px solid var(--dorado-angel);
+        }
+
+        .navbar-brand {
+            font-family: 'Playfair Display', serif;
+            color: var(--dorado-angel) !important;
+            font-size: 1.5rem;
+            letter-spacing: 1px;
+        }
+
+        /* titulo*/
+        .titulo-menu {
+            font-family: 'Playfair Display', serif;
+            color: var(--dorado-angel);
+            font-weight: 700;
+            letter-spacing: 5px;
+            margin-bottom: 10px;
+        }
+
+        .linea {
+            width: 50px;
+            height: 2px;
+            background-color: var(--dorado-angel);
+            margin: 0 auto;
+            opacity: 0.6;
+        }
+
+        /* las tarjetas */
+        .card-menu-angel {
+            background-color: #1a1a1a !important;
+            border: 1px solid #333;
+            transition: all 0.4s ease;
+            cursor: pointer;
+            overflow: hidden;
+            height: 150px;
+        }
+
+        .card-menu-angel:hover {
+            transform: translateY(-5px);
+            border-color: var(--dorado-angel);
+        }
+
+        .img-menu-card {
+            height: 150px;    
+            width: 100%;
+            object-fit: cover;   
+            object-position: center;
+        }
+
+        .card-body {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            height: 100%;
+        }
+
+        .text-gold {
+            color: var(--dorado-angel);
+            font-family: 'Playfair Display', serif;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        /* pie de pag */
+        .footer-angel {
+            background-color: #000;
+            border-top: 2px solid var(--dorado-angel);
+            padding: 40px 0 20px;
+            margin-top: 50px;
+        }
+
+        .footer-angel h5 {
+            color: var(--dorado-angel);
+            font-family: 'Playfair Display', serif;
+            margin-bottom: 20px;
+            text-transform: uppercase;
+            font-size: 1.1rem;
+        }
+
+        .footer-link {
+            color: rgba(255,255,255,0.7);
+            text-decoration: none;
+            transition: 0.3s;
+            display: block;
+            margin-bottom: 10px;
+            font-size: 0.9rem;
+        }
+
+        .footer-link:hover {
+            color: var(--dorado-angel);
+        }
+
+        .final {
+            font-size: 0.8rem;
+            color: rgba(255,255,255,0.3);
+            border-top: 1px solid #222;
+            padding-top: 20px;
+            margin-top: 30px;
+        }
+    </style>
+</head>
+<body>
+
+<nav class="navbar navbar-dark bg-dark shadow-sm">
+    <div class="container">
+        <a class="navbar-brand fw-bold" href="#">ARCOS DEL ÁNGEL</a>
+        <span class="navbar-text ms-auto text-white small d-none d-md-block"><i class="bi bi-geo"></i>
+            San Isidro, Tomatlan, 61940 Huetamo de Núñez, Mich., México
+        </span>
+    </div>
+</nav>
+
+<div class="container text-center my-5">
+    <h2 class="titulo-menu">NUESTRO MENÚ</h2>
+    <div class="linea"></div>
+</div>
+
+<div class="container pb-5">
+    <div class="row g-4">
+        
+        <div class="col-12 col-lg-6">
+            <a href="pdf/md.pdf" target="_blank" class="text-decoration-none">
+                <div class="card card-menu-angel">
+                    <div class="row g-0">
+                        <div class="col-4">
+                            <img src="img/d1.jpg" class="img-fluid rounded-start img-menu-card" alt="Desayunos">
+                        </div>
+                        <div class="col-8">
+                            <div class="card-body">
+                                <h5 class="card-title text-gold">Desayunos</h5>
+                                <p class="card-text text-white-50">...</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </a>
+        </div>
+
+        <div class="col-12 col-lg-6">
+            <a href="pdf/mn.pdf" target="_blank" class="text-decoration-none">
+                <div class="card card-menu-angel">
+                    <div class="row g-0">
+                        <div class="col-4">
+                            <img src="img/n1.jpg" class="img-fluid rounded-start img-menu-card" alt="Menú de niños">
+                        </div>
+                        <div class="col-8">
+                            <div class="card-body">
+                                <h5 class="card-title text-gold">Menú de niños</h5>
+                                <p class="card-text text-white-50">...</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </a>
+        </div>
+
+        <div class="col-12 col-lg-6">
+            <a href="pdf/mp.pdf" target="_blank" class="text-decoration-none">
+                <div class="card card-menu-angel">
+                    <div class="row g-0">
+                        <div class="col-4">
+                            <img src="img/p1.jpg" class="img-fluid rounded-start img-menu-card" alt="Platillos">
+                        </div>
+                        <div class="col-8">
+                            <div class="card-body">
+                                <h5 class="card-title text-gold">Platillos</h5>
+                                <p class="card-text text-white-50">...</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </a>
+        </div>
+
+        <div class="col-12 col-lg-6">
+            <a href="pdf/mb.pdf" target="_blank" class="text-decoration-none">
+                <div class="card card-menu-angel">
+                    <div class="row g-0">
+                        <div class="col-4">
+                            <img src="img/b1.jpg" class="img-fluid rounded-start img-menu-card" alt="Bebidas">
+                        </div>
+                        <div class="col-8">
+                            <div class="card-body">
+                                <h5 class="card-title text-gold">Bebidas y cocteleria</h5>
+                                <p class="card-text text-white-50">...</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </a>
+        </div>
+        
+    </div>
+</div>
+
+<footer class="footer-angel">
+    <div class="container">
+        <div class="row g-4 text-center text-md-start">
+            <div class="col-12 col-md-4">
+                <h5>Contáctanos</h5>
+                <a href="tel:+524351219414" class="footer-link"><i class="bi bi-telephone"></i> Telefono: +52 435 121 9414</a>
+                <a href="mailto:reservas@arcosdelangel.com" class="footer-link"><i class="bi bi-envelope"></i> reservas@arcosdelangel.com</a>
+                <p class="footer-link"><i class="bi bi-geo-alt"></i> San Isidro, Tomatlan, 61940 Huetamo, Mich.</p>
+            </div>
+
+            <div class="col-12 col-md-4">
+                <h5>Horarios</h5>
+                <p class="footer-link">Lunes a Jueves: 8:00 AM - 10:00 PM</p>
+                <p class="footer-link">Viernes a Domingo: 9:00 AM - 8:00 PM</p>
+            </div>
+
+            <div class="col-12 col-md-4">
+                <h5>Síguenos</h5>
+                <a href="https://facebook.com/..." target="_blank" class="footer-link"><i class="bi bi-facebook"></i> Facebook</a>
+                <a href="https://instagram.com/..." target="_blank" class="footer-link"><i class="bi bi-instagram"></i> Instagram</a>
+                <a href="https://wa.me/..." target="_blank" class="footer-link"><i class="bi bi-whatsapp"></i> WhatsApp</a>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-12 text-center">
+                <div class="final">
+                    Arcos del Ángel - Huetamo, Michoacán.
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
